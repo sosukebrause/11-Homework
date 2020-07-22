@@ -1,7 +1,22 @@
 [
   {
-    "title": "dfs",
-    "text": "ssf",
-    "id": 1
+    "title": "mySQL",
+    "text": "joining tables",
+    "id": 2
+  },
+  {
+    "title": "JS",
+    "text": "if/else operators in ternary",
+    "id": 3
+  },
+  {
+    "title": "JS",
+    "text": "promises with async/await",
+    "id": 4
+  },
+  {
+    "title": "Callbacks",
+    "text": "exported objects",
+    "id": 5
   }
 ]

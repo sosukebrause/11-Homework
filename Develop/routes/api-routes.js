@@ -26,7 +26,6 @@ router.post("/notes", async (req, res) => {
 
 router.delete("/notes/:id", async (req, res) => {
   const data = JSON.parse(await readFileAsync("./db/db.json", "utf8"));
-  // res.json(data);
   const noteID = parseInt(req.params.id);
 
   console.log(data);
@@ -35,8 +34,6 @@ router.delete("/notes/:id", async (req, res) => {
   console.log(filteredData);
   await writeFileAsync("./db/db.json", JSON.stringify(filteredData, null, 2));
   res.json(filteredData);
-  // res.json({ ok: true });
-  // console.log("api hit to delete note");
 });
 
 module.exports = router;
