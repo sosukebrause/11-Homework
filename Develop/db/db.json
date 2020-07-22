@@ -1,51 +1,7 @@
 [
   {
-    "title": "Test Title",
-    "text": "Test text"
-  },
-  {
-    "title": "feb",
-    "text": "skeep",
-    "id": 2
-  },
-  {
-    "title": "march",
-    "text": "css",
-    "id": 3
-  },
-  {
-    "title": "may",
-    "text": "birthday",
-    "id": 4
-  },
-  {
-    "title": "jun",
-    "text": "node modules",
-    "id": 5
-  },
-  {
-    "title": "july",
-    "text": "mysql",
-    "id": 6
-  },
-  {
-    "title": "april",
-    "text": "class constructors",
-    "id": 7
-  },
-  {
-    "title": "group project",
-    "text": "bucketlist",
-    "id": 8
-  },
-  {
-    "title": "tutoring",
-    "text": "homework",
-    "id": 9
-  },
-  {
-    "title": "paul",
-    "text": "50min",
-    "id": 10
+    "title": "dfs",
+    "text": "ssf",
+    "id": 1
   }
 ]

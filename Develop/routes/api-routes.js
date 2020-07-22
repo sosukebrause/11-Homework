@@ -15,22 +15,28 @@ router.get("/notes", async (req, res) => {
 router.post("/notes", async (req, res) => {
   const data = JSON.parse(await readFileAsync("./db/db.json", "utf8"));
   newItem = req.body;
-  console.log(newItem);
+  // console.log(newItem);
   newItem.id = data.length + 1;
-  console.log(newItem.id);
+  // console.log(newItem.id);
   data.push(newItem);
   await writeFileAsync("./db/db.json", JSON.stringify(data, null, 2));
   res.json(data);
-  console.log("api hit to post note");
+  // console.log("api hit to post note");
 });
 
 router.delete("/notes/:id", async (req, res) => {
   const data = JSON.parse(await readFileAsync("./db/db.json", "utf8"));
-  res.json(data);
+  // res.json(data);
+  const noteID = parseInt(req.params.id);
+
   console.log(data);
-  const noteID = req.params.id;
-  console.log(noteID);
-  console.log("api hit to delete note");
+  const filteredData = data.filter((notes) => notes.id !== noteID);
+
+  console.log(filteredData);
+  await writeFileAsync("./db/db.json", JSON.stringify(filteredData, null, 2));
+  res.json(filteredData);
+  // res.json({ ok: true });
+  // console.log("api hit to delete note");
 });
 
 module.exports = router;
